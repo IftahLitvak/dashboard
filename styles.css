@@ -1,0 +1,43 @@
+:root {
+    --left-sidebar-bg-color: #f87171;
+    --left-sidebar-text-color: white;
+    --project-search-section-bg-color: rgb(172, 172, 172);
+    font-size: 14px;
+    --left-sidebar-font-fam: 'Macondo', cursive;
+    --content-font-fam: 'ABeeZee', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template:  1fr 5fr / 1fr 3fr 1fr;
+    font-family: var(--content-font-fam);
+    margin: 0px;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.left-sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    font-family: var(--left-sidebar-font-fam);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--left-sidebar-bg-color);
+    color: var(--left-sidebar-text-color);
+    font-size: 2.5rem;
+}
+
+.logo {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.projects {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.right-sidebar {
+    grid-area: 2 / 3 / 3 / 4;
+}
