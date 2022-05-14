@@ -14,136 +14,184 @@
     <script src="code.js" defer></script>
     <div class="header">
         <div class="top">
-            <div class="search-section">
+            <div class="left-section">
                 <img src="./images/search.svg" alt="search-icon" id="search-icon">
-                <input type="text" placeholder="Type here to search">
+                <input id="search-bar" type="text" placeholder="Type here to search">
             </div>
-            <img src="./images/alarm-on.svg" alt="notification-icon" id="notification-icon">
-            <img src="" alt="profile-icon" id="profile-icon">
-            <span id="user-name">Ignazio Abate</span>
+            <div class="right-section">
+                <img src="./images/alarm-on.svg" alt="notification-icon" id="notification-icon">
+                <img src="./images/temp.svg" alt="profile-icon" id="profile-icon">
+                <span id="user-name">Ignazio Abate</span>
+            </div>
         </div>
         <div class="bottom">
             <div class="profile-bottom">
-                <img src="" alt="profile-icon" id="profile-icon-big">
+                <img src="./images/temp.svg" alt="profile-icon" id="profile-icon-big">
                 <div class="bottom-text">
                     <div class="welcome">Hi there,</div>
                     <div class="user-name-full">Ignazio Abate (@Igna)</div>
                 </div>
             </div>
-            <button class="header-buttons">New</button>
-            <button class="header-buttons">Upload</button>
-            <button class="header-buttons">Share</button>
+            <dic class="buttons-bottom">
+                <button class="header-buttons">New</button>
+                <button class="header-buttons">Upload</button>
+                <button class="header-buttons">Share</button>
+            </dic>
         </div>
     </div>
     <div class="left-sidebar">
-        <div class="logo"><img id="logo" src="" alt="logo">Dashboard</div>
+        <div class="logo"><img id="logo" src="./images/logo.svg" alt="logo">Dashboard</div>
         <div class="nav">
-            <img id="home" src="" alt="home">Home
-            <img id="profile" src="" alt="profile">Profile
-            <img id="messages" src="" alt="messages">Messages
-            <img id="history" src="" alt="history">History
-            <img id="tasks" src="" alt="tasks">Tasks
-            <img id="communities" src="" alt="communities">Communities
+            <div class="nav-btn"><img id="home" src="./images/home.svg" alt="home"><span>Home</span></div>
+            <div class="nav-btn"><img id="profile" src="./images/profile.svg" alt="profile"><span>Profile</span></div>
+            <div class="nav-btn"><img id="messages" src="./images/messages.svg" alt="messages"><span>Messages</span></div>
+            <div class="nav-btn"><img id="history" src="./images/history.svg" alt="history"><span>History</span></div>
+            <div class="nav-btn"><img id="tasks" src="./images/tasks.svg" alt="tasks"><span>Tasks</span></div>
+            <div class="nav-btn"><img id="communities" src="./images/community.svg" alt="communities"><span>Communities</span></div>
         </div>
         <div class="utils">
-            <img id="settings" src="" alt="settings">Settings
-            <img id="support" src="" alt="support">Support
-            <img id="privacy" src="" alt="privacy">Privacy
+            <div class="nav-btn"><img id="settings" src="./images/settingsBlade.svg" alt="settings"><span>Settings</span></div>
+            <div class="nav-btn"><img id="support" src="./images/support.svg" alt="support"><span>Support</span></div>
+            <div class="nav-btn"><img id="privacy" src="./images/privacy.svg" alt="privacy"><span>Privacy</span></div>
         </div>
     </div>
     <div class="projects">
         <div id="projects-title">Projects</div>
         <div class="cards">
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Etch A Sketch</span>
-                <p id="project-description">
-                    This project allows you to make drawings in a grid, while you can control the drawing using multiple tools such as selecting
-                     the color of your pen, change the background color, use an eraser, use a rainbow pen and many more.</p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Etch A Sketch</span>
+                    <p id="project-description">
+                        This project allows you to make drawings in a grid, while you can control the drawing using multiple tools such as selecting
+                         the color of your pen, change the background color, use an eraser, use a rainbow pen and many more.</p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
             
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Odin Recipes</span>
-                <p id="project-description">This project is my first one. It basiclly presenting to you optinal dishes and clicking on them will lead you to their recipe.</p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Odin Recipes</span>
+                    <p id="project-description">This project is my first one. It basiclly presenting to you optinal dishes and clicking on them will lead you to their recipe.</p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Sign-Up Form</span>
-                <p id="project-description">
-                    This project is my first experience with the form element. It is a sample for a SignUp form which can also indicate you if you
-                    entered a valid entry or an invalid entry (which in that case you will recieve information on what are the entry rules).
-                </p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Sign-Up Form</span>
+                    <p id="project-description">
+                        This project is my first experience with the form element. It is a sample for a SignUp form which can also indicate you if you
+                        entered a valid entry or an invalid entry (which in that case you will recieve information on what are the entry rules).
+                    </p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
             
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Calculator</span>
-                <p id="project-description">
-                    This project is pretty simple to explain. A normal calculator with a few additions such as ANS button (last answer) and a display of your
-                    previuos calculations.
-                </p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Calculator</span>
+                    <p id="project-description">
+                        This project is pretty simple to explain. A normal calculator with a few additions such as ANS button (last answer) and a display of your
+                        previuos calculations.
+                    </p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
 
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Landing Page</span>
-                <p id="project-description">This project is a sample of an average website landing page. It is my first experience with flex-box.</p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Landing Page</span>
+                    <p id="project-description">This project is a sample of an average website landing page. It is my first experience with flex-box.</p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
 
             <div class="item">
-                <div id="card-bar"></div>
-                <span id="project-title">Rock Paper Scissors</span>
-                <p id="project-description">
-                    This project is basiclly a Rock Paper Scissors game which you can play against the computer. It was my first experience with using JavaScript
-                    and implementing it on a web page.
-                </p>
+                <div class="card-bar not-over"></div>
+                <div class="card">
+                    <span id="project-title">Rock Paper Scissors</span>
+                    <p id="project-description">
+                        This project is basiclly a Rock Paper Scissors game which you can play against the computer. It was my first experience with using JavaScript
+                        and implementing it on a web page.
+                    </p>
+                    <div class="item-buttons">
+                        <img src="./images/add-fav.svg" alt="fav">
+                        <img src="./images/share.svg" alt="share">
+                    </div>
+                </div>
             </div>
         </div> 
 
     </div>
     <div class="right-sidebar">
         <div class="announcements">
-            <div class="block">
-                <div class="title">Site Maintenance</div>
-                <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
-            </div>
-            <div class="block">
-                <div class="title">Community Share Day</div>
-                <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
-            </div>
-            <div class="block">
-                <div class="title">Updated Privacy Policy</div>
-                <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
+            <div class="announcements-title">Announcements</div>
+            <div class="announcements-blocks">
+                <div class="block">
+                    <div class="title">Site Maintenance</div>
+                    <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
+                </div>
+                <div class="gray-bar"></div>
+                <div class="block">
+                    <div class="title">Community Share Day</div>
+                    <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
+                </div>
+                <div class="gray-bar"></div>
+                <div class="block">
+                    <div class="title">Updated Privacy Policy</div>
+                    <div class="content">Fdjne jdfj eimde ismd sdcmimisd weim deimdd sroe dkmcd dkeorijf dkcdmkmsdc dfsdij ojijoij</div>
+                </div>
             </div>
         </div>
         <div class="trending">
-            <div class="block">
-                <img id="profile-icon" src="" alt="profile-icon">
-                <div class="profile-details">
-                    <div id="profile-name">@Tomori</div>
-                    <div id="profile-description">Central Defender</div>
+            <div class="trending-title">Trending</div>
+            <div class="trending-blocks">
+                <div class="block">
+                    <img id="profile-icon" src="./images/temp.svg" alt="profile-icon">
+                    <div class="profile-details">
+                        <div id="profile-name">@Tomori</div>
+                        <div id="profile-description">Central Defender</div>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <img id="profile-icon" src="" alt="profile-icon">
-                <div class="profile-details">
-                    <div id="profile-name">@Ibra</div>
-                    <div id="profile-description">Forward</div>
+                <div class="block">
+                    <img id="profile-icon" src="./images/temp.svg" alt="profile-icon">
+                    <div class="profile-details">
+                        <div id="profile-name">@Ibra</div>
+                        <div id="profile-description">Forward</div>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <img id="profile-icon" src="" alt="profile-icon">
-                <div class="profile-details">
-                    <div id="profile-name">@Sandrino</div>
-                    <div id="profile-description">Central Midfielder</div>
+                <div class="block">
+                    <img id="profile-icon" src="./images/temp.svg" alt="profile-icon">
+                    <div class="profile-details">
+                        <div id="profile-name">@Sandrino</div>
+                        <div id="profile-description">Central Midfielder</div>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <img id="profile-icon" src="" alt="profile-icon">
-                <div class="profile-details">
-                    <div id="profile-name">@Pioli</div>
-                    <div id="profile-description">Coach</div>
+                <div class="block">
+                    <img id="profile-icon" src="./images/temp.svg" alt="profile-icon">
+                    <div class="profile-details">
+                        <div id="profile-name">@Pioli</div>
+                        <div id="profile-description">Coach</div>
+                    </div>
                 </div>
             </div>
         </div>
